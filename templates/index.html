@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="list">Cupcake List:</h1>
+<Button id="add-cupcake" class="list">Add Cupcake</Button>
+<div class="list" id="cupcake-list">
+
+
+</div>
+<h1 class="form">Add a Cupcake</h1>
+<div id="cupcake-form" class="form">
+
+    <form>
+        <div>
+            <label for="cupcake-flavor">Cupcake Flavor</label>
+            <input type="text" id="cupcake-flavor" placeholder="Enter a flavor" name="cupcake-flavor">
+
+        </div>
+
+        <div>
+            <label for="cupcake-size">Cupcake Size</label>
+            <input type="text" id="cupcake-size" placeholder="Enter a size" name="cupcake-size">
+
+        </div>
+
+        <div>
+            <label for="cupcake-rating">Cupcake rating</label>
+            <input type="text" id="cupcake-rating" placeholder="Enter a rating" name="cupcake-rating">
+
+        </div>
+
+        <div>
+            <label for="cupcake-image">Cupcake Image</label>
+            <input type="text" id="cupcake-image" placeholder="Enter an image url" name="cupcake-image">
+
+        </div>
+
+
+        <button id="submit-cupcake" style="display:inline-block; background-color: green; color:white">Save</button>
+        <button id="cancel"
+            style="display:inline-block; background-color: white; color:rgb(78, 107, 222)">Cancel</button>
+
+
+    </form>
+</div>
+
+
+{% endblock %}
